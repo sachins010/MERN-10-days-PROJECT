@@ -1,0 +1,31 @@
+/* app.post("/login", async (req, res) => {
+    try {
+        const { username, password } = req.body;
+        db.query(
+            "SELECT * FROM userss WHERE username=?",
+            [username],
+            (err, result) => {
+                if (err) {
+                    console.error("Error retrieving user:", err);
+                    return res.status(500).json({ error: "Internal Server Error" });
+                }
+
+                if (result.length > 0) {
+                    const user = result[0];
+
+                    // Check if the provided password matches the stored password
+                    if (password === user.password) {
+                        return res.status(200).json({ message: "Login successful" });
+                    } else {
+                        return res.status(401).json({ error: "Invalid credentials" });
+                    }
+                } else {
+                    return res.status(401).json({ error: "Invalid credentials" });
+                }
+            }
+        );
+    } catch (error) {
+        console.error("Login failed:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+}); */

@@ -1,0 +1,64 @@
+ /* body {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+} */
+.reg {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the box takes the full height of the viewport */
+}
+* {
+    box-sizing: border-box;
+
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 400px;
+ 
+  
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.button {
+    /* Add your styles here */
+    background-color: #3498db;
+    color: #fff;
+    padding:10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 550px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+
+}
+
+.button:hover {
+    /* Hover styles */
+    background-color: #1f77b4; /* Change the background color on hover */
+}
